@@ -104,23 +104,23 @@ var confDB = {
             console.log("TABLA CREADA CORRECTAMENTE");
 
             sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
-                  "VALUES(1, 'Pepe', 'Fernandez', 'Profesor', 'pepe@hotmail.com', 40, '666666666', 'Londres')";
+                  "VALUES(1, 'Pepe', 'Fernandez', 'Profesor', 'pepe@hotmail.com', 40, '666666666', 'Londres',0)";
             tx.executeSql(sql);
 
             sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
-                  "VALUES(2, 'Joan', 'Rapinya', 'Profesor', 'joan@gmail.com', 76, '654765743', 'Valencia')";
+                  "VALUES(2, 'Joan', 'Rapinya', 'Profesor', 'joan@gmail.com', 76, '654765743', 'Valencia',1)";
             tx.executeSql(sql);
 
             sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
-                  "VALUES(3, 'Julian', 'Molina', 'Alumno', 'julian@gmail.com', 56, '999999999', 'Londres')";
+                  "VALUES(3, 'Julian', 'Molina', 'Alumno', 'julian@gmail.com', 56, '999999999', 'Londres',0)";
             tx.executeSql(sql);
 
             sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
-                  "VALUES(4, 'Antonio', 'Silfredo', 'Alumno', '46chovi9@hotmail.es', 23, '777777777', 'Madrid')";
+                  "VALUES(4, 'Antonio', 'Silfredo', 'Alumno', '46chovi9@hotmail.es', 23, '777777777', 'Madrid',1)";
             tx.executeSql(sql);
 
             sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
-                  "VALUES(5, 'Jaime', 'Jaimito', 'Profesor', 'jumofe95@gmail.es', 33, '567654323', 'Valencia')";
+                  "VALUES(5, 'Jaime', 'Jaimito', 'Profesor', 'jumofe95@gmail.es', 33, '567654323', 'Valencia',0)";
             tx.executeSql(sql);
             console.log("INSERCION DE DATOS REALIZADA CORRECTAMENTE");
     },
