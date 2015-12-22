@@ -1,0 +1,35 @@
+ <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+        <link rel="stylesheet" href="jquery/temaCRM.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
+        <title>MiniCRM</title>
+    </head>
+    <body>
+          <div data-role="page" id="listaDeEncuestados">
+
+              <div data-role="header">
+                  <h1>MiniCRM</h1>
+              </div>
+
+              <div data-role="main" class="ui-content" id="lista">
+                        <h1>Listado de clientes</h1>
+                        <ul data-role="listview" data-inset="true"></ul><br>
+              </div>
+
+              <a href="index.html" class="ui-btn" data-ajax="false">Volver</a>
+
+          </div>
+          <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+          <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+          <script type="text/javascript" src="cordova.js"></script>
+          <script type="text/javascript" src="js/index.js"></script>
+          <script type="text/javascript">cargarDB.initialize();</script>
+    </body>
+</html>
+ 

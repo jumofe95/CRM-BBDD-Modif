@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+       
+        <link rel="stylesheet" href="jquery/temaCRM.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
+        <title>MiniCRM</title>
+    </head>
+    <body>
+        <div data-role="page" id="nuevaEncuesta">
+
+            <div data-role="header">
+                <h1>MiniCRM</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <h1>Nuevo cliente</h1>
+                
+                <img src="./img/perfil.png" height="50" width="50" align="center">
+                
+                <form method="post" action="demoform.asp">
+                      <div class="ui-field-contain">
+
+                          <label for="nombre"><b>Nombre:</b></label>
+                          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+                          <label for="apellidos"><b>Apellidos:</b></label>
+                          <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">  
+                          
+                          <label for="edad:"><b>Edad:</b></label>
+                          <input type="text" name="edad" id="edad" placeholder="Edad">
+
+                          <label for="email:"><b>Email:</b></label>
+                          <input type="text" name="email" id="email" placeholder="Email">
+
+                      </div><br>
+            </div>
+
+            <div data-role="main" class="ui-content" id="btnguardar">
+                  <a href="#" class="ui-btn" data-ajax="false">Guardar</a>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/guardar.js"></script>
+    </body>
+</html>
+ 
