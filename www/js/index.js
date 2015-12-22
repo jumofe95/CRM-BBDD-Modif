@@ -97,7 +97,8 @@ var confDB = {
                   "email        VARCHAR(250)    not null,"+
                   "edad         INTEGER         not null,"+
                   "telefono     VARCHAR(250)    not null,"+
-                  "poblacion    VARCHAR(250)    not null);";
+                  "poblacion    VARCHAR(250)    not null,"+
+                  "ultimos      INTEGER(1)      not null);";
 
             tx.executeSql(sql);
             console.log("TABLA CREADA CORRECTAMENTE");
