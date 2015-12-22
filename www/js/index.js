@@ -29,7 +29,9 @@ var cargarDB = {
     },
 
     mostrarDB: function(tx){
-        var sql = "SELECT * FROM localDB ORDER BY ultimos DESC;";
+        //ordenamos los clientes por "ultimos" en orden descendente
+        var sql = "SELECT * FROM localDB ORDER BY ultimos DESC";
+        
         console.log("SE LANZA LA CONSULTA SQL PARA CARGAR LA TABLA");
         tx.executeSql(
             sql,
@@ -103,23 +105,23 @@ var confDB = {
             tx.executeSql(sql);
             console.log("TABLA CREADA CORRECTAMENTE");
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion, ultimos)"+
                   "VALUES(1, 'Pepe', 'Fernandez', 'Profesor', 'pepe@hotmail.com', 40, '666666666', 'Londres',0)";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion, ultimos)"+
                   "VALUES(2, 'Joan', 'Rapinya', 'Profesor', 'joan@gmail.com', 76, '654765743', 'Valencia',1)";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion, ultimos)"+
                   "VALUES(3, 'Julian', 'Molina', 'Alumno', 'julian@gmail.com', 56, '999999999', 'Londres',0)";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion, ultimos)"+
                   "VALUES(4, 'Antonio', 'Silfredo', 'Alumno', '46chovi9@hotmail.es', 23, '777777777', 'Madrid',1)";
             tx.executeSql(sql);
 
-            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion)"+
+            sql = "INSERT INTO localDB(id, nombre, apellidos, cargo, email, edad, telefono, poblacion, ultimos)"+
                   "VALUES(5, 'Jaime', 'Jaimito', 'Profesor', 'jumofe95@gmail.es', 33, '567654323', 'Valencia',0)";
             tx.executeSql(sql);
             console.log("INSERCION DE DATOS REALIZADA CORRECTAMENTE");
